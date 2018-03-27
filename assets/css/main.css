@@ -4514,3 +4514,14 @@
 		/* width: 70px; */
 		margin: 70px;
 	}
+
+	#contact-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#contact-info h3 {
+		margin: 0px 10px 0 30px;
+		padding-bottom: 30px;
+	}
