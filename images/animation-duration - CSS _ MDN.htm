@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration -->
+<html lang="en-US" dir="ltr" class=""><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script async="" src="./animation-duration - CSS _ MDN_files/analytics.js"></script><script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+  <title>animation-duration - CSS | MDN</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+    <link rel="home" href="https://developer.mozilla.org/en-US/">
+    <link rel="license" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#license">
+  
+
+  
+    
+    
+
+    <link href="./animation-duration - CSS _ MDN_files/mdn.aba181e2e425.css" rel="stylesheet" type="text/css">
+
+    
+  
+
+    <link href="./animation-duration - CSS _ MDN_files/wiki.733560e8e110.css" rel="stylesheet" type="text/css">
+
+
+    
+
+  <link href="./animation-duration - CSS _ MDN_files/locale-en-US.a0d0521e251c.css" rel="stylesheet" type="text/css">
+
+  
+    <script type="text/javascript" src="./animation-duration - CSS _ MDN_files/mozilla-dnthelper.3936bd979b1d.js" charset="utf-8"></script>
+    
+
+<script type="text/javascript">
+    // only load GA if DNT is not enabled
+    if (Mozilla && !Mozilla.dntEnabled()) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-36116321-5', 'mozilla.org');
+        ga('set', 'anonymizeIp', true);
+
+        
+
+        // dimension9 == "Section editing"
+        
+            // dimension12 == 'Page Revision'
+            ga('set', 'dimension12', '1367087');
+            // dimension17 == 'English Slug'
+            ga('set', 'dimension17', 'Web/CSS/animation-duration');
+
+        (function() {
+            // http://cfsimplicity.com/61/removing-analytics-clutter-from-campaign-urls
+            var win = window;
+            var removeUtms = function(){
+                var location = win.location;
+                if (location.href.indexOf('utm') != -1 && win.history.replaceState) {
+                    win.history.replaceState({}, '', location.pathname);
+                }
+            };
+
+            ga('send', 'pageview', {'hitCallback': removeUtms});
+        })();
+    }
+</script>
+
+  
+    <!-- common social tags -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.mdn.mozilla.net/static/img/opengraph-logo.72382e605ce3.png">
+    <meta property="og:site_name" content="MDN Web Docs">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://cdn.mdn.mozilla.net/static/img/opengraph-logo.72382e605ce3.png">
+    <meta name="twitter:site" content="@MozDevNet">
+    <meta name="twitter:creator" content="@MozDevNet">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="MDN Web Docs">
+  
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.mdn.mozilla.net/static/img/favicon144.e7e21ca263ca.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.mdn.mozilla.net/static/img/favicon114.d526f38b09c5.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.mdn.mozilla.net/static/img/favicon72.cc65d1d762a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://cdn.mdn.mozilla.net/static/img/favicon57.de33179910ae.png">
+  <!-- basic favicon -->
+     <!-- basic favicon -->
+  
+    
+  
+  <link rel="shortcut icon" href="https://cdn.mdn.mozilla.net/static/img/favicon32.7f3da72dcea1.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://cdn.mdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+  
+  <link rel="dns-prefetch" href="https://interactive-examples.mdn.mozilla.net/" pr="0.75">
+  <link rel="preconnect" href="https://interactive-examples.mdn.mozilla.net/" pr="0.75">
+
+  <link rel="preload" href="https://interactive-examples.mdn.mozilla.net/js/codemirror-5-31-0.js" as="script">
+  <link rel="preload" href="https://interactive-examples.mdn.mozilla.net/js/editor-js.js" as="script">
+
+  <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration$json">
+  <link rel="canonical" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
+
+  
+    
+      <link rel="alternate" hreflang="de" href="https://developer.mozilla.org/de/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="es" href="https://developer.mozilla.org/es/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="fr" href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="ja" href="https://developer.mozilla.org/ja/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="ko" href="https://developer.mozilla.org/ko/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="nl" href="https://developer.mozilla.org/nl/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="ru" href="https://developer.mozilla.org/ru/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+      <link rel="alternate" hreflang="zh-CN" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation-duration" title="animation-duration">
+    
+  
+
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="animation-duration">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
+  <meta name="twitter:title" content="animation-duration">
+  
+  <meta property="og:description" content="The animation-duration CSS property specifies the length of time that an animation should take to complete one cycle.">
+  <meta name="description" content="The animation-duration CSS property specifies the length of time that an animation should take to complete one cycle.">
+  <meta name="twitter:description" content="The animation-duration CSS property specifies the length of time that an animation should take to complete one cycle.">
+  
+
+<link href="./animation-duration - CSS _ MDN_files/wiki-compat-tables.aaae6c040d67.css" type="text/css" rel="stylesheet"><script async="" data-manual="true" src="./animation-duration - CSS _ MDN_files/syntax-prism.05dc5663d445.js"></script></head>
+<body data-slug="Web/CSS/animation-duration" contextmenu="edit-history-menu" data-search-url="" class="document  ">
+
+  <script type="text/javascript">
+    // make sure global mdn object exists
+    var mdn = window.mdn || {};
+
+    (function(win) {
+        'use strict';
+
+        (function(){
+  var FLAGS = {
+    'compat_data': true,'kumaediting': false,'line_length': true,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'sg_task_completion': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true,'newsletter': true,'newsletter_article': true,'foundation_callout': false,'helpful-survey-2': true,'wiki_spam_training': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = '/static/js/libs/ckeditor/build/ckeditor/';
+
+        // Site configuration
+        win.mdn.ckeditor = {};
+        win.mdn.features = {};
+        win.mdn.staticPath = 'https://cdn.mdn.mozilla.net/static/';
+        win.mdn.wiki = {
+            autosuggestTitleUrl: '/en-US/docs/get-documents'
+        };
+        win.mdn.assets = {
+            css: {
+                'editor-content': ['https://cdn.mdn.mozilla.net/static/build/styles/editor-content.fc2e2a3d4883.css','https://cdn.mdn.mozilla.net/static/build/styles/editor-locale-en-US.a0d0521e251c.css',
+                ],
+
+                'wiki-compat-tables': ['https://cdn.mdn.mozilla.net/static/build/styles/wiki-compat-tables.aaae6c040d67.css',]
+            },
+            js: {
+                'syntax-prism': ['https://cdn.mdn.mozilla.net/static/build/js/syntax-prism.05dc5663d445.js',],
+                'wiki-compat-tables': ['https://cdn.mdn.mozilla.net/static/build/js/wiki-compat-tables.003f4acf76ea.js',]
+            }
+        };
+
+        win.mdn.notifications = [];
+
+        
+
+        // interactive editor config
+        win.mdn.interactiveEditor = {
+            siteUrl: "https://developer.mozilla.org",
+            editorUrl: "https://interactive-examples.mdn.mozilla.net"
+        };
+
+    })(this);
+</script>
+    
+    <ul id="nav-access">
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#content" id="skip-main">Skip to main content</a></li>
+  <li><a id="skip-language" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#language">Select language</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#q" id="skip-search">Skip to search</a></li>
+</ul>
+
+    <!-- Header -->
+    <header id="main-header" class="header-main">
+      <a href="https://developer.mozilla.org/en-US/" class="logo">MDN Web Docs</a>
+      <div class="nav-toolbox-wrapper">
+        <nav id="main-nav" class="nav-main" role="navigation">
+    <ul>
+        <li class="nav-main-item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web">Technologies
+                <i aria-hidden="true" class="icon-caret-down"></i>
+            </a>
+            <div class="submenu js-submenu" id="nav-tech-submenu">
+                <div class="submenu-column">
+                  <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">Browser Extensions</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+                  </ul>
+                </div>
+            </div>
+        </li>
+        <li class="nav-main-item">
+            <a href="https://developer.mozilla.org/en-US/docs/Learn">References &amp; Guides
+                <i aria-hidden="true" class="icon-caret-down"></i>
+            </a>
+            <div class="submenu js-submenu" id="nav-learn-submenu">
+                <div class="submenu-column">
+                  <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learn web development</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Games">Game development</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+                  </ul>
+                </div>
+            </div>
+        </li>
+        <li class="nav-main-item">
+            <a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback
+                <i aria-hidden="true" class="icon-caret-down"></i>
+            </a>
+            <div class="submenu js-submenu" id="nav-contact-submenu">
+              <div class="submenu-column">
+                <ul>
+                  <li>
+                      <a href="https://support.mozilla.org/">Get Firefox help
+                          <i aria-hidden="true" class="icon-external-link"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://stackoverflow.com/">Get web development help
+                          <i aria-hidden="true" class="icon-external-link"></i>
+                      </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                      <a href="https://developer.mozilla.org/en-US/docs/MDN/Community">Join the MDN community</a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=https%3A//developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">Report a content problem
+                          <i aria-hidden="true" class="icon-external-link"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="https://bugzilla.mozilla.org/form.mdn">Report a bug
+                          <i aria-hidden="true" class="icon-external-link"></i>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </li>
+  </ul>
+</nav>
+        <div id="toolbox" class="toolbox">
+  <ul>
+  <li class="nav-login"><div class="login">
+    
+        
+        <a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FWeb%2FCSS%2Fanimation-duration" class="login-link js-login-link" data-service="GitHub" rel="nofollow">
+            Sign in
+            <i class="icon-github" aria-hidden="true"></i>
+        </a>
+    
+</div></li>
+  </ul>
+</div>
+      </div>
+      <form id="nav-main-search" action="https://developer.mozilla.org/en-US/search" method="get" role="search" class="nav-main-search">
+  <div class="search-wrap">
+    <label for="main-q" class="offscreen">Search</label>
+    <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="" aria-hidden="true">
+    <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>
+    <button type="submit" class="offscreen">Search</button>
+    <button type="button" id="close-header-search" class="close-header-search transparent">
+        <span class="offscreen">Close search</span>
+        <i aria-hidden="true" class="icon-times"></i>
+    </button>
+  </div>
+</form>
+    </header> 
+
+  <!-- Content will go here -->
+  <main id="content" role="main">
+      
+  <!-- heading -->
+  <div id="wiki-document-head" class="document-head">
+    <div class="center">
+      <!-- action buttons -->
+      <div class="document-actions">
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  <ul class="page-buttons">
+      <li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-language"></i></button>
+
+        <div class="submenu js-submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+              
+                
+                
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/de/docs/Web/CSS/animation-duration" data-locale="de" title="German">Deutsch (de)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/es/docs/Web/CSS/animation-duration" data-locale="es" title="Spanish">Español (es)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-duration" data-locale="fr" title="French">Français (fr)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ja/docs/Web/CSS/animation-duration" data-locale="ja" title="Japanese">日本語 (ja)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ko/docs/Web/CSS/animation-duration" data-locale="ko" title="Korean">한국어 (ko)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/nl/docs/Web/CSS/animation-duration" data-locale="nl" title="Dutch">Nederlands (nl)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/ru/docs/Web/CSS/animation-duration" data-locale="ru" title="Russian">Русский (ru)</a></bdi></li>
+                
+                  <li><bdi><a rel="internal" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation-duration" data-locale="zh-CN" title="Chinese (Simplified)">中文 (简体) (zh-CN)</a></bdi></li>
+                
+              
+
+              
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration$locales" rel="nofollow" id="translations-add">Add a translation</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration$edit" class="button neutral" id="edit-button" rel="nofollow">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li>
+      
+
+        
+
+        <li class="page-buttons-advanced"><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+        <div class="submenu js-submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration$history" rel="nofollow">History</a></li>
+                
+                
+                
+
+
+                
+
+                
+                
+                
+                <li class="page-print"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#" onclick="return window.print();">Print this article</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+      </div>
+
+      <div class="document-title">
+        
+
+        <h1>animation-duration</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toc" class="toc">
+    <div class="center">
+      <div class="toc-head">Jump to:</div>
+        <ol class="toc-links">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#Syntax" rel="internal">Syntax</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#Examples" rel="internal">Examples</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#Specifications" rel="internal">Specifications</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#Browser_Compatibility" rel="internal">Browser compatibility</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#See_also" rel="internal">See also</a>
+        </li></ol>
+    </div>
+  </div>
+  
+
+      <div class="center clear">
+      
+
+    <div class="wiki-main-content" id="document-main"><div class="center">
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-left-present">
+
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-main wiki-column text-content">
+
+              
+
+              
+              
+
+              
+
+              
+              
+
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                
+                  
+                    <div></div>
+
+<p>The <strong><code>animation-duration</code></strong> <a href="https://developer.mozilla.org/en-US/docs/CSS" title="CSS">CSS</a> property specifies the length of time that an animation should take to complete one cycle.</p>
+
+<div><iframe src="./animation-duration - CSS _ MDN_files/animation-duration.html" class="interactive  " width="100%" frameborder="0" height="250"></iframe></div>
+
+<p class="hidden">The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone <a href="https://github.com/mdn/interactive-examples" class="external external-icon" rel="noopener">https://github.com/mdn/interactive-examples</a> and send us a pull request.</p>
+
+<p>It is often convenient to use the shorthand property <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" title="The animation CSS property is a shorthand property for the various animation properties: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state."><code>animation</code></a> to set all animation properties at once.</p>
+
+<h2 id="Syntax">Syntax</h2>
+
+<pre class="brush:css no-line-numbers  language-css"><code class=" language-css"><span class="token comment" spellcheck="true">/* Single animation */</span>
+<span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">6</span>s<span class="token punctuation">;</span>
+<span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">120</span>ms<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/* Multiple animations */</span>
+<span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">1.64</span>s, <span class="token number">15.22</span>s<span class="token punctuation">;</span>
+<span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">10</span>s, <span class="token number">35</span>s, <span class="token number">230</span>ms<span class="token punctuation">;</span><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="Values" class="highlight-spanned"><span class="highlight-span">Values</span></h3>
+
+<dl>
+ <dt><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/time" title="The &lt;time&gt; CSS data type represents a time value expressed in seconds or milliseconds. It is used in animation, transition, and related properties."><code>&lt;time&gt;</code></a></code></dt>
+ <dd>The duration that an animation takes to complete one cycle. This may be specified in either seconds (<code>s</code>) or milliseconds (<code>ms</code>). The value must positive or zero and the unit is required. A value of <code>0s</code>, which is the default value, indicates that no animation should occur.</dd>
+</dl>
+
+<div class="note">
+<p><strong>Note:</strong> Negative values are invalid, causing the declaration to be ignored. Some early, prefixed, implementations may consider them as identical to <code>0s</code>.</p>
+</div>
+
+<div class="note">
+<p><strong>Note</strong>: When you specify multiple comma-separated values on an <code>animation-*</code> property, they will be assigned to the animations specified in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name" title="The animation-name CSS property specifies one or more animations that should be applied to an element. Each name indicates an @keyframes at-rule that defines the property values for the animation sequence."><code>animation-name</code></a> property in different ways depending on how many there are. For more information, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations#Setting_multiple_animation_property_values">Setting multiple animation property values</a>.</p>
+</div>
+
+<h3 id="Formal_syntax" class="highlight-spanned"><span class="highlight-span">Formal syntax</span></h3>
+
+<pre class="syntaxbox"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/time" title="Possible values: a number followed by&#39;s&#39; or &#39;ms&#39;, like 3s, -2.5ms or 0s.">&lt;time&gt;</a><a href="https://developer.mozilla.org/en-US/docs/CSS/Value_definition_syntax#Hash_mark_()" title="Hash mark: the entity is repeated one or several times, each occurence separated by a comma">#</a></pre>
+
+<h2 id="Examples">Examples</h2>
+
+<p>See <a href="https://developer.mozilla.org/en/CSS/CSS_animations" title="en/CSS/CSS_animations">CSS animations</a> for examples.</p>
+
+<h2 id="Specifications" name="Specifications">Specifications</h2>
+
+<p></p><table class="properties"><tbody><tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value">Initial value</a></th><td><code>0s</code></td></tr><tr><th scope="row">Applies to</th><td>all elements, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before" title="In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property."><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after" title="In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property."><code>::after</code></a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">pseudo-elements</a></td></tr><tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance">Inherited</a></th><td>no</td></tr><tr><th scope="row">Media</th><td>visual</td></tr><tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">Computed value</a></th><td>as specified</td></tr><tr><th scope="row">Animation type</th><td>discrete</td></tr><tr><th scope="row">Canonical order</th><td>the unique non-ambiguous order defined by the formal grammar</td></tr></tbody></table><p></p>
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="col">Specification</th>
+   <th scope="col">Status</th>
+   <th scope="col">Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a href="https://drafts.csswg.org/css-animations/#animation-duration" hreflang="en" lang="en" class="external external-icon" rel="noopener">CSS Animations<br><small lang="en-US">The definition of 'animation-duration' in that specification.</small></a></td>
+   <td><span class="spec-WD">Working Draft</span></td>
+   <td>Initial definition.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="Browser_Compatibility" name="Browser_Compatibility">Browser compatibility</h2>
+
+<div class="hidden">The compatibility table on this page is generated from structured data. If you'd like to contribute to the data, please check out <a href="https://github.com/mdn/browser-compat-data" class="external external-icon" rel="noopener">https://github.com/mdn/browser-compat-data</a> and send us a pull request.</div>
+
+<p></p><div class="bc-old hidden"><div class="htab">
+    <a id="AutoCompatibilityTable" name="AutoCompatibilityTable"></a>
+    <ul>
+    <li class="selected">
+    <a>Desktop</a>
+    </li>
+    <li>
+    <a>Mobile</a>
+    </li>
+    </ul>
+    <div id="compat-desktop" style="display: block;"><table class="compat-table"><thead><tr><th>Feature</th><th>Chrome</th><th>Edge</th><th>Firefox</th><th>Internet Explorer</th><th>Opera</th><th>Safari</th></tr></thead><tbody><tr><td><a href="https://developer.mozilla.org/docs/Web/CSS/animation-duration">Basic support</a></td><td class="full-support"><p>43</p><p>3<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p></td><td class="full-support"><p><span title="Please update this with the earliest version of support.">
+      Yes</span></p><p><span title="Please update this with the earliest version of support.">
+      Yes</span><span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p></td><td class="full-support"><p>16</p><p>49<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p><p>44<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span><sup><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#compatNote_1">1</a></sup></p><p>5<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-moz-&#39; as this
+      browser considers it experimental">-moz-
+      </a></span></p></td><td class="full-support">10</td><td class="no-support"><p>12.1&nbsp;— 15</p><p>15<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p><p>12&nbsp;— 15<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-o-&#39; as this
+      browser considers it experimental">-o-
+      </a></span></p></td><td class="full-support">4<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></td></tr></tbody></table></div><div id="compat-mobile" style="display: none;"><table class="compat-table"><thead><tr><th>Feature</th><th>Android webview</th><th>Chrome for Android</th><th>Edge mobile</th><th>Firefox for Android</th><th>Opera Android</th><th>iOS Safari</th><th>Samsung Internet</th></tr></thead><tbody><tr><td><a href="https://developer.mozilla.org/docs/Web/CSS/animation-duration">Basic support</a></td><td class="full-support"><p><span title="Please update this with the earliest version of support.">
+      Yes</span></p><p>2<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p></td><td class="full-support"><p>43</p><p><span title="Please update this with the earliest version of support.">
+      Yes</span><span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p></td><td class="full-support"><p><span title="Please update this with the earliest version of support.">
+      Yes</span></p><p><span title="Please update this with the earliest version of support.">
+      Yes</span><span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p></td><td class="full-support"><p>16</p><p>49<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p><p>44<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span><sup><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#compatNote_1">1</a></sup></p><p>5<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-moz-&#39; as this
+      browser considers it experimental">-moz-
+      </a></span></p></td><td class="no-support"><p>12.1&nbsp;— 15</p><p>15<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></p><p>12&nbsp;— 15<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-o-&#39; as this
+      browser considers it experimental">-o-
+      </a></span></p></td><td class="full-support">4.2<span class="inlineIndicator prefixBox prefixBoxInline" title="prefix">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Prefixes" title="The name of this feature is prefixed with &#39;-webkit-&#39; as this
+      browser considers it experimental">-webkit-
+      </a></span></td><td class="unknown-support"><span title="Compatibility unknown; please update this.">
+      ?</span></td></tr></tbody></table></div></div><p id="compatNote_1">1. From version 44: this feature is behind the <code>layout.css.prefixes.webkit</code> preference (needs to be set to <code>true</code>). To change preferences in Firefox, visit about:config.</p></div><div class="bc-data"><div class="bc-beta-menu"><a href="https://developer.mozilla.org/docs/New_Compatibility_Tables_Beta">New compatibility tables are in beta <i class="icon-caret-down" aria-hidden="true"></i></a><ul class="submenu js-submenu"><li><a href="https://developer.mozilla.org/docs/New_Compatibility_Tables_Beta">More about the beta.</a></li><li><a href="https://www.surveygizmo.com/s3/2342437/0b5ff6b6b8f6" class="external external-icon">Take the survey</a></li><li><button class="button bc-error">Report an error.</button></li><li><button class="button bc-old">Show old table.</button></li></ul></div><table class="bc-table bc-table-web"><thead><tr class="bc-platforms"><td></td><th colspan="6" class="bc-platform-desktop"><abbr class="only-icon" title="Desktop"><span>Desktop</span><i class="ic-desktop"></i></abbr></th><th colspan="7" class="bc-platform-mobile"><abbr class="only-icon" title="Mobile"><span>Mobile</span><i class="ic-mobile"></i></abbr></th></tr><tr class="bc-browsers"><td></td><th class="bc-browser-chrome"><abbr class="only-icon" title="Chrome"><span>Chrome</span><i class="ic-chrome"></i></abbr></th><th class="bc-browser-edge"><abbr class="only-icon" title="Edge"><span>Edge</span><i class="ic-edge"></i></abbr></th><th class="bc-browser-firefox"><abbr class="only-icon" title="Firefox"><span>Firefox</span><i class="ic-firefox"></i></abbr></th><th class="bc-browser-ie"><abbr class="only-icon" title="Internet Explorer"><span>Internet Explorer</span><i class="ic-ie"></i></abbr></th><th class="bc-browser-opera"><abbr class="only-icon" title="Opera"><span>Opera</span><i class="ic-opera"></i></abbr></th><th class="bc-browser-safari"><abbr class="only-icon" title="Safari"><span>Safari</span><i class="ic-safari"></i></abbr></th><th class="bc-browser-webview_android"><abbr class="only-icon" title="Android webview"><span>Android webview</span><i class="ic-webview_android"></i></abbr></th><th class="bc-browser-chrome_android"><abbr class="only-icon" title="Chrome for Android"><span>Chrome for Android</span><i class="ic-chrome_android"></i></abbr></th><th class="bc-browser-edge_mobile"><abbr class="only-icon" title="Edge Mobile"><span>Edge Mobile</span><i class="ic-edge_mobile"></i></abbr></th><th class="bc-browser-firefox_android"><abbr class="only-icon" title="Firefox for Android"><span>Firefox for Android</span><i class="ic-firefox_android"></i></abbr></th><th class="bc-browser-opera_android"><abbr class="only-icon" title="Opera for Android"><span>Opera for Android</span><i class="ic-opera_android"></i></abbr></th><th class="bc-browser-safari_ios"><abbr class="only-icon" title="iOS Safari"><span>iOS Safari</span><i class="ic-safari_ios"></i></abbr></th><th class="bc-browser-samsunginternet_android"><abbr class="only-icon" title="Samsung Internet"><span>Samsung Internet</span><i class="ic-samsunginternet_android"></i></abbr></th></tr></thead><tbody><tr><th scope="row">Basic support</th><td class="bc-supports-yes bc-browser-chrome bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-1"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              43<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-1" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              43<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              3<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-edge bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-2"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-2" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-firefox bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-3"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              16<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-3" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              16<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              49<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              44<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> <abbr class="only-icon" title="User must explicitly enable this feature."><span>Disabled</span><i class="ic-disabled"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dd><abbr class="only-icon" title="User must explicitly enable this feature."><span>Disabled</span><i class="ic-disabled"></i></abbr> From version 44: this feature is behind the <code>layout.css.prefixes.webkit</code> preference (needs to be set to <code>true</code>). To change preferences in Firefox, visit about:config.</dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              5<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -moz-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -moz-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -moz-</dd></dl></section></td><td class="bc-supports-yes bc-browser-ie"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              10</td><td class="bc-supports-no bc-browser-opera bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-4"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12.1&nbsp;— 15<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-4" class="bc-history"><dl><dt class="bc-supports-no bc-supports"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12.1&nbsp;— 15<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              15<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dt class="bc-supports-no bc-supports"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12&nbsp;— 15<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -o-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -o-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -o-</dd></dl></section></td><td class="bc-supports-yes bc-browser-safari bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-5"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              4<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-5" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              4<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-webview_android bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-6"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-6" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              2<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-chrome_android bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-7"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              43<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-7" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              43<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-edge_mobile bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-8"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-8" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              Yes<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-yes bc-browser-firefox_android bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-9"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              16<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-9" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              16<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              49<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              44<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> <abbr class="only-icon" title="User must explicitly enable this feature."><span>Disabled</span><i class="ic-disabled"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dd><abbr class="only-icon" title="User must explicitly enable this feature."><span>Disabled</span><i class="ic-disabled"></i></abbr> From version 44: this feature is behind the <code>layout.css.prefixes.webkit</code> preference (needs to be set to <code>true</code>). To change preferences in Firefox, visit about:config.</dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              5<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -moz-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -moz-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -moz-</dd></dl></section></td><td class="bc-supports-no bc-browser-opera_android bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-10"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12.1&nbsp;— 15<div class="bc-icons"></div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-10" class="bc-history"><dl><dt class="bc-supports-no bc-supports"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12.1&nbsp;— 15<div class="bc-icons"></div></dt><dd></dd><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              15<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd><dt class="bc-supports-no bc-supports"><abbr class="bc-level-no only-icon" title="No support">
+              <span>No support</span>
+            </abbr>12&nbsp;— 15<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -o-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -o-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -o-</dd></dl></section></td><td class="bc-supports-yes bc-browser-safari_ios bc-has-history" tabindex="0" aria-expanded="false" aria-controls="bc-history-11"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              4.2<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div><button title="Open implementation notes" class="bc-history-link only-icon" tabindex="-1"><span>Open</span><i class="ic-history" aria-hidden="true"></i></button><section id="bc-history-11" class="bc-history"><dl><dt class="bc-supports-yes bc-supports"><abbr class="bc-level-yes only-icon" title="Full support">
+                <span>Full support</span>
+              </abbr>
+              4.2<div class="bc-icons"><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> </div></dt><dd><abbr class="only-icon" title="Requires the vendor prefix: -webkit-"><span>Prefixed</span><i class="ic-prefix"></i></abbr> Requires the vendor prefix: -webkit-</dd></dl></section></td><td class="bc-supports-unknown bc-browser-samsunginternet_android"><abbr title="Compatibility unknown; please update this.">
+                ?
+              </abbr></td></tr></tbody></table><section id="sect12" class="bc-legend"><h3 id="Legend" class="offscreen highlight-spanned"><span class="highlight-span">Legend</span></h3><dl><dt><span class="bc-supports-yes bc-supports">
+                <abbr class="bc-level bc-level-yes only-icon" title="Full support">
+                 <span>Full support</span>
+                 &nbsp;
+                </abbr></span></dt><dd>Full support</dd><dt><span class="bc-supports-no bc-supports">
+                <abbr class="bc-level bc-level-no only-icon" title="No support">
+                 <span>No support</span>
+                 &nbsp;
+                </abbr></span></dt><dd>No support</dd><dt><span class="bc-supports-unknown bc-supports">
+                <abbr class="bc-level bc-level-unknown only-icon" title="Compatibility unknown">
+                 <span>Compatibility unknown</span>
+                 &nbsp;
+                </abbr></span></dt><dd>Compatibility unknown</dd><dt><abbr class="only-icon" title="User must explicitly enable this feature."><span>User must explicitly enable this feature.</span><i class="ic-disabled"></i></abbr></dt><dd>User must explicitly enable this feature.</dd><dt><abbr class="only-icon" title="Requires a vendor prefix or different name for use."><span>Requires a vendor prefix or different name for use.</span><i class="ic-prefix"></i></abbr></dt><dd>Requires a vendor prefix or different name for use.</dd></dl></section></div><p></p>
+
+<h2 id="See_also">See also</h2>
+
+<ul>
+ <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" title="Tutorial about CSS animations">Using CSS animations</a></li>
+ <li>JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent" title="The AnimationEvent interface represents events providing information related to animations."><code>AnimationEvent</code></a> API</li>
+</ul>
+                  
+                
+              </article>
+
+              <!-- contributors -->
+              <div class="wiki-block contributors">
+                <h2 class="offscreen">Document Tags and Contributors</h2>
+                
+                
+  <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags icon-fw"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/CSS" rel="nofollow">CSS</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/CSS%20Animations" rel="nofollow">CSS Animations</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/CSS%20Property" rel="nofollow">CSS Property</a></li>
+      
+        <li><a href="https://developer.mozilla.org/en-US/docs/tag/Reference" rel="nofollow">Reference</a></li>
+      
+    </ul>
+  </div>
+
+
+                
+                  <div class="contributors-sub">
+                    <i aria-hidden="true" class="icon-group icon-fw"></i>&nbsp;<strong>Contributors to this page:</strong> 
+        <a href="https://developer.mozilla.org/en-US/profiles/ddbeck">ddbeck</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/fscholz">fscholz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/mfluehr">mfluehr</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/wbamberg">wbamberg</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/scholachoi">scholachoi</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/chrisdavidmills">chrisdavidmills</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/erikadoyle">erikadoyle</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sebastianz">Sebastianz</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jpmedley">jpmedley</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/jsx">jsx</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/ethertank">ethertank</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/CutenessOverload">CutenessOverload</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/FredB">FredB</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/McGurk">McGurk</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/yyss">yyss</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/myakura">myakura</a>, 
+    
+        <a href="https://developer.mozilla.org/en-US/profiles/Marcoos">Marcoos</a>
+    
+                  </div>
+                
+
+                
+                  <div class="contributors-sub">
+                    <i aria-hidden="true" class="icon-clock-o icon-fw"></i>&nbsp;<strong>Last updated by:</strong>
+                    <a href="https://developer.mozilla.org/en-US/profiles/ddbeck">ddbeck</a>,
+                    <time datetime="2018-03-14T04:58:25.476908-07:00">Mar 14, 2018, 4:58:25 AM</time>
+                  </div>
+                
+              </div>
+            </div>
+
+            
+              <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+                
+                  <!-- crumbs -->
+                  
+  
+    <nav class="crumbs" role="navigation">
+      <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="breadcrumbs">
+        
+          <li property="itemListElement" typeof="ListItem" class="crumb">
+            <a href="https://developer.mozilla.org/en-US/docs/Web" property="item" typeof="WebPage">
+              <span property="name">Web technology for developers</span>
+            </a>
+            <meta property="position" content="1">
+          </li>
+        
+          <li property="itemListElement" typeof="ListItem" class="crumb">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" property="item" typeof="WebPage">
+              <span property="name">CSS</span>
+            </a>
+            <meta property="position" content="2">
+          </li>
+        
+        <li property="itemListElement" typeof="ListItem" class="crumb">
+          <span property="name">animation-duration</span>
+        </li>
+      </ol>
+    </nav>
+  
+                
+
+                
+
+                
+                  <!-- quick links -->
+                  
+  <div class="quick-links" id="quick-links">
+    <div class="quick-links-head">Related Topics</div>
+    <ol><li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></strong></li><li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference</a></strong></li><li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">CSS Animations</a></strong></li><li data-default-state="open" class="toggleable current" data-closed=""><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-down"></i><strong>Guides</strong></a><ol class="toggle-container" aria-expanded="true" style="display: block;"><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips" title="CSS Animations make it possible to do incredible things with the elements that make up your documents and apps. However, there are things you might want to do that aren&#39;t obvious, or clever ways to do things that you might not come up with right away. This article is a collection of tips and tricks we&#39;ve found that may make your work easier, including how to run a stopped animation again.">CSS Animations tips and tricks</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Detecting_CSS_animation_support" title="CSS animations make it possible to do creative animations of content using nothing but CSS. However, there are likely to be times when this feature isn&#39;t available, and you may wish to handle that case by using JavaScript code to simulate a similar effect. This article, based on this blog post by Chris Heilmann, demonstrates a technique for doing this.">Detecting CSS animation support</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" title="CSS animations make it possible to animate transitions from one CSS style configuration to another.">Using CSS animations</a></li></ol></li><li data-default-state="open" class="toggleable current" data-closed=""><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-down"></i><strong>At-Rules</strong></a><ol class="toggle-container" aria-expanded="true" style="display: block;"><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" title="The @keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence."><code>@keyframes</code></a></li></ol></li><li data-default-state="open" class="toggleable current" data-closed=""><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration#" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-down"></i><strong>Properties</strong></a><ol class="toggle-container" aria-expanded="true" style="display: block;"><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident" title="The &lt;custom-ident&gt; CSS data type denotes an arbitrary user-defined string used as an identifier. It is case-sensitive, and certain values are forbidden in various contexts to prevent ambiguity."><code>&lt;custom-ident&gt;</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" title="The animation CSS property is a shorthand property for the various animation properties: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state."><code>animation</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay" title="The animation-delay CSS property specifies when an animation should start. You can begin the animation at a future point in time, immediately and from its begining, or immediately and partway through the animation cycle."><code>animation-delay</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" title="The animation-direction CSS property specifies whether an animation should play forwards, backwards, or alternating back and forth."><code>animation-direction</code></a></li><li><em><code>animation-duration</code></em></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode" title="The animation-fill-mode CSS property specifies how a CSS animation should apply styles to its target before and after its execution."><code>animation-fill-mode</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count" title="The animation-iteration-count CSS property specifies the number of times an animation cycle should be played before stopping. If multiple values are specified, each time the animation is played the next value in the list is used, cycling back to the first value after the last one is used."><code>animation-iteration-count</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name" title="The animation-name CSS property specifies one or more animations that should be applied to an element. Each name indicates an @keyframes at-rule that defines the property values for the animation sequence."><code>animation-name</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" title="The animation-play-state CSS property specifies whether an animation is running or paused. In JavaScript, this can be queried to determine whether or not the animation is currently running. In addition, you can use JavaScript to set its value to pause or resume playback of an animation."><code>animation-play-state</code></a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" title="The animation-timing-function CSS property specifies how a CSS animation should progress over the duration of each cycle."><code>animation-timing-function</code></a></li></ol></li></ol>
+  </div>
+                
+
+                <!-- approvals -->
+                
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+    
+      <div class="newsletter-box">
+        <div class="newsletter">
+    <form id="newsletterForm" class="newsletter-form nodisable" name="newsletter-form" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+        <div class="newsletter-head">
+            <h2 class="newsletter-teaser">Learn the best of web development</h2>
+            <p class="newsletter-description">Get the latest and greatest from MDN delivered straight to your inbox.</p>
+            
+        </div>
+
+        <div class="newsletter-fields">
+            <input type="hidden" id="fmt" name="fmt" value="H">
+            <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev">
+            <div id="newsletterErrors" class="newsletter-errors"></div>
+
+            <div id="newsletterEmail" class="form-group newsletter-group-email">
+                <label for="newsletterEmailInput" class="form-label offscreen">E-mail</label>
+                <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required="" placeholder="you@example.com" size="30">
+            </div>
+
+            <div id="newsletterPrivacy" class="form-group form-group-agree newsletter-group-privacy hidden">
+                <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required="">
+                <label for="newsletterPrivacyInput">
+                I'm okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.
+                </label>
+            </div>
+            <div id="newsletterSubmit" class="newsletter-group-submit">
+                <button id="newsletter-submit" type="submit" class="button neutral newsletter-submit">Sign up now</button>
+            </div>
+        </div>
+    </form>
+    <div id="newsletterThanks" class="newsletter-thanks hidden">
+        <h2>Thanks! Please check your inbox to confirm your subscription.</h2>
+        <p>If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
+        </p>
+    </div>
+    <button id="newsletterHide" type="button" class="only-icon newsletter-hide"><span>Hide Newsletter Sign-up</span><i aria-hidden="true" class="icon-times"></i></button>
+</div>
+      </div>
+    
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Web/CSS/animation-duration$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Web/CSS/animation-duration$history" label="View page history"></menuitem>
+  </menu>
+
+      </div>
+  </main>
+  <!-- Footer -->
+    <footer id="nav-footer" class="nav-footer">
+      <div class="center">
+          <a href="https://developer.mozilla.org/en-US/" class="nav-footer-logo">MDN Web Docs</a>
+          <div class="footer-group footer-group-mdn">
+            <h2 class="footer-title">MDN</h2>
+            <ul class="footer-list">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Technologies</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learn Web Development</a></li>
+              <li><a href="https://developer.mozilla.org/docs/MDN/About">About MDN</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/MDN/Feedback">Feedback</a></li>
+              <li class="footer-social"><a href="https://twitter.com/mozdevnet" class="only-icon"><i aria-hidden="true" class="icon-twitter"></i> <span>Twitter</span></a></li>
+              <li class="footer-social"><a href="https://github.com/mdn/" class="only-icon"><i aria-hidden="true" class="icon-github"></i> <span>GitHub</span></a></li>
+            </ul>
+          </div>
+
+          <a href="https://mozilla.org/" class="nav-footer-mozilla">Mozilla</a>
+          <div class="footer-group footer-group-mozilla">
+            <h2 class="footer-title">Mozilla</h2>
+            <ul class="footer-list">
+              <li><a href="https://www.mozilla.org/about/">About</a></li>
+              <li><a href="https://www.mozilla.org/contact/">Contact Us</a></li>
+              <li><a href="https://donate.mozilla.org/?utm_source=developer.mozilla.org&amp;utm_medium=referral&amp;utm_content=footer">Donate</a></li>
+              <li><a href="https://www.mozilla.org/firefox/?utm_source=developer.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral">Firefox</a></li>
+              <li class="footer-social"><a href="https://twitter.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-twitter"></i> <span>Twitter</span></a></li>
+              <li class="footer-social"><a href="https://www.facebook.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-facebook"></i> <span>Facebook</span></a></li>
+              <li class="footer-social"><a href="https://www.instagram.com/mozillagram/" class="only-icon"><i aria-hidden="true" class="icon-instagram"></i> <span>Instagram</span></a></li>
+            </ul>
+          </div>
+
+          
+  
+    <form class="languages go" method="get" action="https://developer.mozilla.org/en-US/docs/Web">
+      <label for="language">Other languages:</label>
+      <select id="language" class="wiki-l10n" name="next" dir="ltr">
+        <option title="English (US)" data-locale="en-US" value="/en-US/docs/Web/CSS/animation-duration" selected="">
+          English (US) (en-US)
+        </option>
+        
+          <option title="German" data-locale="en-US" value="/de/docs/Web/CSS/animation-duration">
+            Deutsch (de)
+          </option>
+          <option title="Spanish" data-locale="en-US" value="/es/docs/Web/CSS/animation-duration">
+            Español (es)
+          </option>
+          <option title="French" data-locale="en-US" value="/fr/docs/Web/CSS/animation-duration">
+            Français (fr)
+          </option>
+          <option title="Japanese" data-locale="en-US" value="/ja/docs/Web/CSS/animation-duration">
+            日本語 (ja)
+          </option>
+          <option title="Korean" data-locale="en-US" value="/ko/docs/Web/CSS/animation-duration">
+            한국어 (ko)
+          </option>
+          <option title="Dutch" data-locale="en-US" value="/nl/docs/Web/CSS/animation-duration">
+            Nederlands (nl)
+          </option>
+          <option title="Russian" data-locale="en-US" value="/ru/docs/Web/CSS/animation-duration">
+            Русский (ru)
+          </option>
+          <option title="Chinese (Simplified)" data-locale="en-US" value="/zh-CN/docs/Web/CSS/animation-duration">
+            中文 (简体) (zh-CN)
+          </option>
+      </select>
+      <noscript>&lt;button type="submit"&gt;Go&lt;/button&gt;</noscript>
+    </form>
+  
+
+
+          
+            <ul class="footer-tos">
+              <li><a href="https://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+              <li><a href="https://www.mozilla.org/privacy/websites/">Privacy</a></li>
+              <li><a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            </ul>
+
+            <div id="license" class="contentinfo">
+              <p>© 2005-2018 Mozilla and individual contributors.</p> <p>Content is available under <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+            </div>
+          
+      </div>
+    </footer> 
+
+  <!-- site js -->
+  
+    
+    <!--[if lte IE 8]><script type="text/javascript" src="https://cdn.mdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    
+    <script type="text/javascript" src="./animation-duration - CSS _ MDN_files/javascript.b28203373cc1.js"></script>
+    <script type="text/javascript" src="./animation-duration - CSS _ MDN_files/main.7d60b1e16ebc.js" charset="utf-8"></script>
+    <script>
+    if (window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+</script>
+    
+
+  
+
+    <script async="" type="text/javascript" src="./animation-duration - CSS _ MDN_files/wiki.c60705233ffd.js" charset="utf-8"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+    <script async="" type="text/javascript" src="./animation-duration - CSS _ MDN_files/newsletter.7cd3274169f2.js" charset="utf-8"></script>
+  
+
+
+
+</body></html>
